@@ -1,0 +1,123 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Evaluable_Recomendacion\com.python.pydev.analysis\v2_indexcache
+main.tests|1714994446400000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\tests.py
+Evaluable.settings|1716379440735598800|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\settings.py
+main.__init__|1714994446420000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\__init__.py
+main.migrations.0003_alter_puntuaciones_animeid|1716389936498726100|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0003_alter_puntuaciones_animeid.py
+main.migrations.__init__|1714994446425000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\__init__.py
+main.apps|1714994446371000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\apps.py
+main.migrations.0002_puntuaciones_delete_puntuacion|1716389512023950000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0002_puntuaciones_delete_puntuacion.py
+Evaluable.__init__|1714994168471000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\__init__.py
+main.models|1716389908321261100|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\models.py
+manage|1716379440682599100|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\manage.py
+main.views|1716391650850549900|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\views.py
+Evaluable.asgi|1716379440716587800|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\asgi.py
+main.forms|1716390870291303900|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\forms.py
+Evaluable.wsgi|1716379440638589200|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\wsgi.py
+main.migrations.0001_initial|1716386984378550100|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0001_initial.py
+main.admin|1714994446350000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\admin.py
+Evaluable.urls|1716391686816908500|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\urls.py
+main.recommendations|1652341390000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\recommendations.py
+main.populateDB|1716389968230864900|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\populateDB.py
+-- END DISKCACHE
+-- START DICTIONARY
+38
+19=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0003_alter_puntuaciones_animeid.py
+31=AceptarForm
+30=Puntuaciones
+34=Migration
+18=main.apps
+33=MainConfig
+37=Anime.Meta
+25=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\populateDB.py
+22=main.migrations.0002_puntuaciones_delete_puntuacion
+8=main.models
+6=main.views
+3=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\settings.py
+9=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\asgi.py
+29=Anime
+13=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\recommendations.py
+10=Evaluable.asgi
+12=Evaluable.wsgi
+35=AnimesGeneroForm.Meta
+27=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\urls.py
+38=Puntuaciones.Meta
+5=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\views.py
+23=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0001_initial.py
+17=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\apps.py
+11=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\wsgi.py
+4=Evaluable.settings
+20=main.migrations.0003_alter_puntuaciones_animeid
+32=AnimesGeneroForm
+1=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\forms.py
+16=manage
+36=SearchUserForm
+2=main.forms
+15=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\manage.py
+24=main.migrations.0001_initial
+14=main.recommendations
+28=Evaluable.urls
+7=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\models.py
+26=main.populateDB
+21=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0002_puntuaciones_delete_puntuacion.py
+-- END DICTIONARY
+-- START TREE 1
+33
+ace|1|AceptarForm!1^7#7*17@
+all|1|ALLOWED_HOSTS!3^28#1*35@
+ani|4|AnimesGeneroForm!1^18#7*17@animes_genero!5^38#5*50@Anime!7^8#7*65@anime_recommendation!5^50#5*50@
+app|2|application!9^16#1*83@application!11^16#1*99@
+aut|1|AUTH_PASSWORD_VALIDATORS!3^101#1*35@
+bas|1|BASE_DIR!3^16#1*35@
+cal|1|calculateSimilarItems!13^101#5*114@
+dat|1|DATABASES!3^82#1*35@
+deb|1|DEBUG!3^26#1*35@
+def|1|DEFAULT_AUTO_FIELD!3^126#1*35@
+get|2|getRecommendations!13^64#5*114@getRecommendedItems!13^117#5*114@
+ind|1|index!5^101#5*50@
+ins|1|INSTALLED_APPS!3^41#1*35@
+lan|1|LANGUAGE_CODE!3^107#1*35@
+loa|2|loadDict!5^19#5*50@loadRS!5^34#5*50@
+mai|2|main!15^7#5*130@MainConfig!17^4#7*145@
+mid|1|MIDDLEWARE!3^51#1*35@
+mig|3|Migration!19^7#7*161@Migration!21^7#7*177@Migration!23^8#7*193@
+pat|1|path!25^5#1*211@
+pop|4|populatePuntuacion!25^34#5*210@populateAnime!25^12#5*210@populateDatabase!5^104#5*50@populate!25^7#5*210@
+pun|1|Puntuaciones!7^21#7*65@
+roo|1|ROOT_URLCONF!3^53#1*35@
+sea|1|SearchUserForm!1^37#7*17@
+sec|1|SECRET_KEY!3^23#1*35@
+sim|2|sim_pearson!13^22#5*114@sim_distance!13^6#5*114@
+sta|1|STATIC_URL!3^121#1*35@
+tem|1|TEMPLATES!3^69#1*35@
+tim|1|TIME_ZONE!3^109#1*35@
+top|1|topMatches!13^56#5*114@
+tra|1|transformPrefs!13^90#5*114@
+url|1|urlpatterns!27^13#1*227@
+use|4|USE_I18N!3^111#1*35@USE_TZ!3^115#1*35@USE_L10N!3^113#1*35@user_recommendation!5^77#5*50@
+wsg|1|WSGI_APPLICATION!3^71#1*35@
+-- END TREE
+-- START TREE 2
+20
+__s|2|__str__!29&7^15#9*66@__str__!30&7^26#9*66@
+ace|1|acepta!31&1^16#5*19@
+ani|3|AnimeId!29&7^9#5*67@AnimeId!30&7^23#5*67@animes!32&1^19#5*19@
+def|1|default_auto_field!33&17^5#5*147@
+dep|3|dependencies!34&21^11#5*179@dependencies!34&19^11#5*163@dependencies!34&23^13#5*195@
+epi|1|Episodios!29&7^13#5*67@
+fie|1|fields!35&1^35#9*19@
+for|1|Formato!29&7^12#5*67@
+gen|4|generos!32&1^23#9*19@Genero!29&7^11#5*67@GENEROS_CHOICES!32&1^26#5*19@generos_set!32&1^20#5*19@
+ida|1|idAnime!36&1^38#5*19@
+idu|1|idUsuario!30&7^22#5*67@
+ini|1|initial!34&23^10#5*195@
+met|3|Meta!32&1^33#11*17@Meta!29&7^18#11*65@Meta!30&7^29#11*65@
+mod|1|model!35&1^34#9*19@
+nam|1|name!33&17^6#5*147@
+opc|1|OPCIONES_ACEPTA!31&1^11#5*19@
+ope|3|operations!34&23^40#5*195@operations!34&21^29#5*179@operations!34&19^19#5*163@
+ord|2|ordering!37&7^19#9*67@ordering!38&7^30#9*67@
+pun|1|Puntuacion!30&7^24#5*67@
+tit|1|Titulo!29&7^10#5*67@
+-- END TREE

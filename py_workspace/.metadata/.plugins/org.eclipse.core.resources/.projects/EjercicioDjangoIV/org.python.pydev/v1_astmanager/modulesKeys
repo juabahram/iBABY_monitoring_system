@@ -1,0 +1,17 @@
+MODULES_MANAGER_V3
+EjercicioDjangoIV.__init__|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\__init__.py
+EjercicioDjangoIV.asgi|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\asgi.py
+EjercicioDjangoIV.settings|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\settings.py
+EjercicioDjangoIV.urls|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\urls.py
+EjercicioDjangoIV.wsgi|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\wsgi.py
+main.__init__|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\__init__.py
+main.admin|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\admin.py
+main.apps|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\apps.py
+main.forms|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\forms.py
+main.migrations.0001_initial|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\migrations\0001_initial.py
+main.migrations.__init__|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\migrations\__init__.py
+main.models|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\models.py
+main.populateDB|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\populateDB.py
+main.tests|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\tests.py
+main.views|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\views.py
+manage|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\manage.py

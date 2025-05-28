@@ -1,0 +1,110 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\EjercicioDjangoIV\com.python.pydev.analysis\v2_indexcache
+EjercicioDjangoIV.settings|1650273152000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\settings.py
+main.tests|1650272984000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\tests.py
+EjercicioDjangoIV.__init__|1650272960000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\__init__.py
+main.__init__|1650272984000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\__init__.py
+main.migrations.__init__|1650272984000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\migrations\__init__.py
+main.apps|1650272984000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\apps.py
+main.models|1714400160939543100|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\models.py
+manage|1650272960000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\manage.py
+main.views|1650528358000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\views.py
+EjercicioDjangoIV.asgi|1650272960000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\asgi.py
+EjercicioDjangoIV.wsgi|1650272960000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\wsgi.py
+main.forms|1714396017848061700|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\forms.py
+main.migrations.0001_initial|1650273172000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\migrations\0001_initial.py
+main.admin|1650273036000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\admin.py
+main.populateDB|1650527932000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\populateDB.py
+EjercicioDjangoIV.urls|1650273084000000000|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\urls.py
+-- END DISKCACHE
+-- START DICTIONARY
+34
+2=EjercicioDjangoIV.settings
+7=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\views.py
+13=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\apps.py
+25=Uva
+32=Uva.Meta
+29=Migration
+14=main.apps
+27=VinosPorAnyo
+28=MainConfig
+10=main.models
+34=VinosPorUvas
+5=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\asgi.py
+8=main.views
+4=EjercicioDjangoIV.wsgi
+6=EjercicioDjangoIV.asgi
+9=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\models.py
+1=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\settings.py
+24=Denominacion
+19=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\urls.py
+23=Pais
+33=Vino.Meta
+15=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\migrations\0001_initial.py
+17=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\populateDB.py
+12=manage
+21=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\main\forms.py
+30=Pais.Meta
+22=main.forms
+31=Denominacion.Meta
+16=main.migrations.0001_initial
+11=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\manage.py
+26=Vino
+3=C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\EjercicioDjangoIV\EjercicioDjangoIV\wsgi.py
+18=main.populateDB
+20=EjercicioDjangoIV.urls
+-- END DICTIONARY
+-- START TREE 1
+29
+all|1|ALLOWED_HOSTS!1^28#1*19@
+app|2|application!3^16#1*35@application!5^16#1*51@
+aut|1|AUTH_PASSWORD_VALIDATORS!1^101#1*19@
+bas|1|BASE_DIR!1^16#1*19@
+bus|2|buscar_vinos_por_anyo!7^19#5*66@buscar_vinos_por_uva!7^33#5*66@
+dat|1|DATABASES!1^82#1*19@
+deb|1|DEBUG!1^26#1*19@
+def|1|DEFAULT_AUTO_FIELD!1^126#1*19@
+den|1|Denominacion!9^16#7*81@
+ind|1|index!7^45#5*66@
+ins|1|INSTALLED_APPS!1^41#1*19@
+lan|1|LANGUAGE_CODE!1^107#1*19@
+mai|2|main!11^7#5*98@MainConfig!13^4#7*113@
+mid|1|MIDDLEWARE!1^51#1*19@
+mig|1|Migration!15^7#7*129@
+mos|1|mostrar_vinos_por_denominaciones!7^15#5*66@
+pai|1|Pais!9^6#7*81@
+pat|1|path!17^4#1*147@
+pop|6|populatePais!17^6#5*146@populateUva!17^32#5*146@populateDatabase!7^9#5*66@populate!17^67#5*146@populateDenominacion!17^19#5*146@populateVino!17^45#5*146@
+roo|1|ROOT_URLCONF!1^53#1*19@
+sec|1|SECRET_KEY!1^23#1*19@
+sta|1|STATIC_URL!1^121#1*19@
+tem|1|TEMPLATES!1^69#1*19@
+tim|1|TIME_ZONE!1^109#1*19@
+url|1|urlpatterns!19^13#1*163@
+use|3|USE_I18N!1^111#1*19@USE_L10N!1^113#1*19@USE_TZ!1^115#1*19@
+uva|1|Uva!9^27#7*81@
+vin|3|Vino!9^37#7*81@VinosPorUvas!21^11#7*177@VinosPorAnyo!21^8#7*177@
+wsg|1|WSGI_APPLICATION!1^71#1*19@
+-- END TREE
+-- START TREE 2
+18
+__s|4|__str__!23&9^10#9*82@__str__!24&9^21#9*82@__str__!25&9^31#9*82@__str__!26&9^44#9*82@
+any|1|anyo!27&21^9#5*179@
+def|1|default_auto_field!28&13^5#5*115@
+den|1|denominacion!26&9^41#5*83@
+dep|1|dependencies!29&15^12#5*131@
+idd|1|idDenominacion!24&9^17#5*83@
+idp|1|idPais!23&9^7#5*83@
+idu|1|idUva!25&9^28#5*83@
+idv|1|idVino!26&9^38#5*83@
+ini|1|initial!29&15^9#5*131@
+met|4|Meta!23&9^13#11*81@Meta!24&9^24#11*81@Meta!25&9^34#11*81@Meta!26&9^47#11*81@
+nam|1|name!28&13^6#5*115@
+nom|4|nombre!23&9^8#5*83@nombre!24&9^18#5*83@nombre!25&9^29#5*83@nombre!26&9^39#5*83@
+ope|1|operations!29&15^63#5*131@
+ord|4|ordering!30&9^14#9*83@ordering!31&9^25#9*83@ordering!32&9^35#9*83@ordering!33&9^48#9*83@
+pai|1|pais!24&9^19#5*83@
+pre|1|precio!26&9^40#5*83@
+uva|2|uvas!26&9^42#5*83@uva!34&21^12#5*179@
+-- END TREE

@@ -1,0 +1,13 @@
+INSTUPRestAPI
+C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\database\RestAPI.py
+INFOS:&&3|1|2|0|3|10|1&&2|4|2|0|3|14|5&&2|5|2|0|3|22|5&&2|6|2|0|3|31|5&&2|7|2|0|3|40|5&&2|8|2|0|3|49|5&&2|9|2|0|3|59|5&&2|10|2|0|3|69|5
+app=1
+get_sensor_by_id=6
+insertar_actuador=10
+conectar_bd=4
+RestAPI=2
+C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\database\RestAPI.py=3
+get_sensors_by_type=7
+get_all_sensors=5
+get_sensor_by_date=8
+obtener_actuadores=9

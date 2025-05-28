@@ -1,0 +1,20 @@
+MODULES_MANAGER_V3
+Evaluable.__init__|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\__init__.py
+Evaluable.asgi|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\asgi.py
+Evaluable.settings|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\settings.py
+Evaluable.urls|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\urls.py
+Evaluable.wsgi|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\Evaluable\wsgi.py
+main.__init__|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\__init__.py
+main.admin|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\admin.py
+main.apps|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\apps.py
+main.forms|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\forms.py
+main.migrations.0001_initial|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0001_initial.py
+main.migrations.0002_puntuaciones_delete_puntuacion|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0002_puntuaciones_delete_puntuacion.py
+main.migrations.0003_alter_puntuaciones_animeid|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\0003_alter_puntuaciones_animeid.py
+main.migrations.__init__|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\migrations\__init__.py
+main.models|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\models.py
+main.populateDB|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\populateDB.py
+main.recommendations|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\recommendations.py
+main.tests|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\tests.py
+main.views|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\main\views.py
+manage|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\4o año\Acceso Inteligente a la Informacion\AII_ws\Evaluable_Recomendacion\manage.py
