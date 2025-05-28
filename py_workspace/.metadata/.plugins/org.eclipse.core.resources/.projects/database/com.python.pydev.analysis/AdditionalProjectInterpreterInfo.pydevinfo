@@ -2,7 +2,7 @@
 -- START DISKCACHE_3
 C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\database\com.python.pydev.analysis\v2_indexcache
 app|1743523502686119200|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\database\app.py
-RestAPI|1742057639647221900|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\database\RestAPI.py
+RestAPI|1745944825667480600|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\database\RestAPI.py
 launchDB|1742057738489983100|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\database\launchDB.py
 -- END DISKCACHE
 -- START DICTIONARY
@@ -17,15 +17,15 @@ launchDB|1742057738489983100|C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Com
 -- START TREE 1
 13
 alm|1|almacenar_bd!1^5#5*18@
-app|1|app!3^9#1*35@
+app|1|app!3^10#1*35@
 bro|1|broker!5^60#5*51@
 cli|1|client!5^63#5*51@
-con|2|conectar_bd!5^8#5*50@conectar_bd!3^12#5*34@
+con|2|conectar_bd!5^8#5*50@conectar_bd!3^14#5*34@
 db_|1|DB_NAME!5^5#1*51@
-get|4|get_sensor_by_id!3^29#5*34@get_all_sensors!3^20#5*34@get_sensors_by_type!3^38#5*34@get_sensor_by_date!3^47#5*34@
+get|4|get_sensor_by_id!3^31#5*34@get_all_sensors!3^22#5*34@get_sensors_by_type!3^40#5*34@get_sensor_by_date!3^49#5*34@
 id_|1|id_set!5^6#1*51@
-ins|2|insert_sensor!5^12#5*50@insertar_actuador!3^67#5*34@
-obt|1|obtener_actuadores!3^57#5*34@
+ins|2|insert_sensor!5^12#5*50@insertar_actuador!3^69#5*34@
+obt|1|obtener_actuadores!3^59#5*34@
 on_|2|on_connect!5^31#5*50@on_message!5^39#5*50@
 por|1|port!5^61#5*51@
 upd|1|update_sensor!5^21#5*50@

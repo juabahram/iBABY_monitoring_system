@@ -14,9 +14,11 @@ function MonitorView(){
     const[sensors, setSensors] = useState<sensor[]>([]);
     
     useEffect(()=>{
-        fetch('http://127.0.0.1:5000/api/sensors').then((res) => res.json())
-        .then((data) => setSensors(data))
-        .catch((err) => console.error("Error: ")+err);
+        const interval = setInterval(()=> {
+            fetch('http://127.0.0.1:5000/api/sensors').then((res) => res.json())
+            .then((data) => setSensors(data))
+            .catch((err) => console.error("Error: ")+err);
+        }, 8000)
     },[]);
 
     return(

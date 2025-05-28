@@ -57,7 +57,7 @@ def on_message(client, userdata, msg):
 if __name__ == "__main__":
 
     # Configuración del cliente MQTT
-    broker = "192.168.175.99"
+    broker = "192.168.241.170"
     port = 1883
 
     client = mqtt.Client()

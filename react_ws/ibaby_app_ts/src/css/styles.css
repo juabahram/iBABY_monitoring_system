@@ -268,9 +268,10 @@ div#gauges.row{
 }
 
 div#StrollerPosition.row{
-  max-height: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .instructions{
@@ -409,5 +410,5 @@ h3#air{
 }
 
 div.js-plotly-plot{
-  padding-top: 30px;
+  padding: 0;
 }

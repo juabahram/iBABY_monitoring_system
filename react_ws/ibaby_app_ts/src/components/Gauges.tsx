@@ -9,7 +9,6 @@ import { sensor } from './MonitorView';
 
 import Plot from 'react-plotly.js';
 
-
 const colors:Array<String> = [
     "#aa57d4",
     "#a04ec3",
@@ -71,14 +70,21 @@ function AirQualityGauge({sensors} : {sensors: sensor[]}){
 function TempHumGauge({sensors} : {sensors: sensor[]}){
     const[valor,setValor] = useState<number>(0);
     const[valor2,setValor2] = useState<number>(0);
+    const prevVal=0.;
 
     useEffect(()=>{
         const sensor = sensors.find(el => el.TYPE=="temperatura");
-        const sensor2 = sensors.find(el => el.TYPE=="humedad");
         if(sensor){
             setValor(sensor.VALUE);
-        }else if(sensor2){
-            setValor2(sensor2.VALUE);
+        }
+    },[sensors]);
+
+    useEffect(()=>{
+        const sensor2 = sensors.find(e => e.TYPE=="humedad");
+        if(sensor2){
+            if(sensor2.VALUE != prevVal){
+                setValor2(sensor2.VALUE);
+            }
         }
     },[sensors]);
       
@@ -92,7 +98,7 @@ function TempHumGauge({sensors} : {sensors: sensor[]}){
                             theme="dark"
                             value={valor}
                             max="40"
-                            steps="2"
+                            steps="3"
                             format="°C"
                             size="small"
                             height="180"
@@ -108,7 +114,7 @@ function TempHumGauge({sensors} : {sensors: sensor[]}){
                             needleColor="#EEC9FF"
                             hideText={true}
                         />
-                        <h3 id="hum">Relative humidity: {valor2/100}%</h3>
+                        <h3 id="hum">Relative humidity: {valor2}%</h3>
                     </div>
                 </div>
             </div>
@@ -130,40 +136,36 @@ function PressurePositionCard({sensors} : {sensors: sensor[]}){
 }
 
 function StrollerPositionCard({sensors} : {sensors: sensor[]}){
+
+    const[value, setValue] = useState<number[]>([]);
+    const[isOn, setIsOn] = useState<String>("");
+
+    useEffect(() =>{
+        const rawValue = sensors.find(el => el.TYPE=='angular')?.VALUE;
+        const values = rawValue?.toString().split(',').map(Number);
+        if (values){
+            setValue(values);
+        }
+    }, [sensors]);
+
+    useEffect(() => {
+        const val = sensors.find(el => el.TYPE=='press')?.VALUE;
+        if(val==1){
+            setIsOn("Baby ON stroller");
+        }else setIsOn("Baby OFF stroller");
+    })
+
+    const val1= value[0];
+    const val2= value[1];
+
+    const totalAngle = Math.sqrt(val1 ** 2 + val2 ** 2);
+
     return(
         <div className='col'>
         <div className='card' id='monitor'>
             <div className='row' id='StrollerPosition'>
-            <h3 id="pos">Stroller angle position: {}</h3>
-            <Plot
-                data={[
-                    {
-                    x: [0,-11],
-                    y: [0,-9],
-                    type: 'scatter',
-                    mode: 'lines',
-                    marker: { color: 'white' },
-                    },
-                ]}
-                layout={{
-                    autosize:true,
-                    showlegend: false,
-                    xaxis: {
-                      showgrid: false,
-                      zeroline: false,
-                      visible: false,
-                    },
-                    yaxis: {
-                      showgrid: false,
-                      zeroline: false,
-                      visible: false,
-                    },
-                    plot_bgcolor: 'transparent',
-                    paper_bgcolor: 'transparent'
-                  }}
-                config={{ displayModeBar: false , responsive: true, staticPlot: true, scrollZoom: false}}
-                style={{ width: '50%', height: '100%', fontSize: 'calc(1.3rem + .6vw)' }}
-            />
+            <h3 id="pos">Stroller angle position: {totalAngle.toPrecision(4)}°</h3>
+            <h3 id="pos">{isOn}</h3>
             </div>
         </div>
     </div>
