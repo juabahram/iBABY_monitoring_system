@@ -5,6 +5,13 @@ div#header{
   top:0;
 }
 
+div#header.container{
+  min-height: 92.8px;
+  min-width: 100%;
+  background: #0d0640;
+  background: linear-gradient(-90deg,rgba(13, 6, 64, 1) 0%, rgba(58, 43, 141, 1) 58%, rgba(187, 157, 219, 1) 100%);
+}
+
 div#bar{
   display: flex;
   justify-content: space-between;
@@ -15,10 +22,10 @@ div#bar{
 }
 
 .title-block{
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(53, 56, 58);
   line-height: 0%;
 }
 
@@ -26,8 +33,9 @@ div#bar{
   display: flex;
   text-align: left;
   font-size: 300%;
-  color:#969696; 
+  color:rgb(41, 0, 59); 
   margin-left: 5%;
+  margin-bottom: 0;
 }
 
 #subtitle{
@@ -42,24 +50,31 @@ div#bar{
   width: 100vw;
   display: flex;
   align-items: center;
-  background-color: #252525;
+  background: #0f0640;
+  background: linear-gradient(-90deg,rgba(15, 6, 64, 1) 0%, rgba(67, 48, 176, 1) 100%);
   height: 60px;
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
 }
     
 .sidebar-menu {
   justify-content: center;
+  position: absolute;
   width: 30%;
   height: 100%;
   margin-left: 0;
-  background-color: #252525;
-  position: absolute;
-  top: 122px;
+  background: #0f0640;
+  background: linear-gradient(240deg,rgba(15, 6, 64, 1) 0%, rgba(87, 46, 153, 1) 54%, rgba(193, 108, 235, 1) 100%);
+  top: 153px;
   left: -100%;
   z-index: 90;
   transition: .6s;
+  overflow-y: auto;
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.295);
 }
     
-.sidebar-menu.closed {
+div.sidebar-menu.closed {
   position: fixed;
   overflow-y: auto;
   max-width: 300px;
@@ -118,7 +133,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #9e9e9e;
+  background-color: rgb(194, 155, 50);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -133,6 +148,8 @@ button.rounded-5{
   margin-left:0%;
   overflow: hidden;
   padding: 0%;
+  color: #160425;
+
 }
 
 button.button-close{
@@ -140,18 +157,20 @@ button.button-close{
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  background-color: #9e9e9e;
+  background-color: rgb(255, 187, 0);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: 0.25s;
   margin-left: 1.5%;
 }
 
 button:hover {
-  border-color: #76c5b4;
+  background-color: #9870e2;
+  transition: 0.25s;
 }
 
 ul.but{
   padding-left: 5%;
+  overflow-y: auto;
 }
 
 div.content{
@@ -175,7 +194,8 @@ div.login{
 }
 
 div#login.card{
-  background-color: rgb(175, 218, 203);
+  background: #913df2;
+  background: linear-gradient(240deg,rgba(145, 61, 242, 1) 14%, rgba(238, 201, 255, 1) 100%);
   width: 33%;
   height: auto;
   display: flex;
@@ -203,14 +223,16 @@ input{
 
 div#gaugesGrid.container{
   margin:0%;
+  padding: 0;
   justify-content: center;
   align-items: center;
 }
 
 
 div#monitor.card{
-  background-color: rgba(82, 172, 224, 0.356);
-  width: 50%;
+  background: #913df2;
+  background: linear-gradient(240deg,rgba(145, 61, 242, 1) 14%, rgba(238, 201, 255, 1) 100%);
+  width: 100%;
   height: 250px;
   display: flex;
   justify-items: center;
@@ -218,7 +240,7 @@ div#monitor.card{
   align-items: center;
   border-radius: 25px;
   padding: 2%;
-  box-shadow: 5px 5px 2px rgba(163, 163, 163, 0.377);
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.295);
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -232,12 +254,23 @@ div.col{
 
 div#humtemp.row{
   max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 100%;
 }
 
 div#gauges.row{
   display: flex;
   justify-items: center;
   align-items: center;
+  width: 100%;
+}
+
+div#StrollerPosition.row{
+  max-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .instructions{
@@ -262,12 +295,18 @@ div.navbar{
 }
 
 div#sub.col-sm-6{
-  background-color: rgb(53, 56, 58);;
   display: flex;
   align-items: center;
   text-align: right;
   flex-direction: row-reverse;
 }
+
+div.col-sm-6{
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
 
 div.col-8{
   display: flex;
@@ -285,15 +324,36 @@ div#butBar.col{
 div.main-content{
   overflow-x: hidden;
   overflow-y: auto;
-  margin-left: 30%;
-  margin-top: 1.5%;
+  height: 100vh;
+  padding-top: 10px;
+  background: #1b1059;
+  background: linear-gradient(-45deg,rgba(27, 16, 89, 1) 0%, rgba(58, 43, 141, 1) 11%, rgba(187, 157, 219, 1) 100%);
+}
 
+div.container{
+  padding: 0;
 }
 
 div.main-content.mobile{
   margin-right: 0%;
   margin-left: 0%;
   transition: margin .3s ease;
+}
+
+div.main-content.mobile > div.container.regular{
+  padding-left: 0;
+}
+
+div.main-content.mobile > div.container.toggled{
+  margin-left: 30%;
+}
+
+div.container.toggled > div.container > div#gaugesGrid.container > div#gauges.row{
+  width: calc(100vw - 30vw);
+}
+
+div.main-content > div.container.toggled{
+  margin-left: 30%;
 }
 
 div.container.toggled{
@@ -304,9 +364,10 @@ div.container.toggled{
 div.container.regular{
   margin-left:0;
   transition: .3s ease-in-out;
+  padding-left: 30%;
+  min-width: 100vw;
 }
 #gauge-chart1{
-  display: flex;
   width: 50% !important;
   margin-top: 5%;
 }
@@ -314,17 +375,39 @@ div.container.regular{
 div#temphum.col{
   display: flex;
   justify-content: normal;
-  align-items: center;
-  width: 100%;
+  min-width: fit-content;
+  flex-direction: column;
+  padding: 0;
 }
 
 div#temphum_temp.col{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: fit-content;
+  padding-top: 5px;
 }
 
 .button-close.mobile{
   display: none;
+}
+
+h3#hum{
+  display: flex;
+  color: white;
+}
+
+h3#pos{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+h3#air{
+  color: white;
+}
+
+div.js-plotly-plot{
+  padding-top: 30px;
 }

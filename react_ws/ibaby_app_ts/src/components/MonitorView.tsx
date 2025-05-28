@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { TempHumGauge } from "./Gauges";
+import { StrollerPositionCard, TempHumGauge } from "./Gauges";
 import { AirQualityGauge } from "./Gauges";
 import { useEffect, useState } from 'react';
 
@@ -25,6 +25,7 @@ function MonitorView(){
                 <div className="row" id="gauges">
                     <TempHumGauge sensors={sensors}/>
                     <AirQualityGauge sensors={sensors}/>
+                    <StrollerPositionCard sensors={sensors}/>
                 </div>
             </div>
         </div>

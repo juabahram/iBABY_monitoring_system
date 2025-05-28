@@ -26,10 +26,10 @@ function SideBar({mobile, close, HandleToggle}:{mobile: boolean; close:boolean; 
         
         
         <div className={`sidebar-menu ${close || mobile ? 'closed' : 'open'}`}>
+            <ul className='but'>
             {SideBarData.map((item)=>{
                 return(
                     <>
-                    <ul className='but'>
                         <li  key="item">
                             <Link to={item.path}>
                             <button className="rounded-5">
@@ -38,11 +38,11 @@ function SideBar({mobile, close, HandleToggle}:{mobile: boolean; close:boolean; 
                             </button>
                             </Link>
                         </li>  
-                    </ul>
                     </>
                 )
             })
             }
+            </ul>
         </div>
         
         </>

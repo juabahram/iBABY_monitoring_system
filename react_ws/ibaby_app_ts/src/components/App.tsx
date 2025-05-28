@@ -27,7 +27,7 @@ function App() {
       handleResize();
   },[])
   
-    const mobile = width>1000;
+    const mobile = width>600;
 
   return (
     <>
