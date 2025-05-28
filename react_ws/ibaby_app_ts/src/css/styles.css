@@ -369,8 +369,10 @@ div.container.regular{
   min-width: 100vw;
 }
 #gauge-chart1{
-  width: 50% !important;
-  margin-top: 5%;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  display: flex;
+  justify-content: center;
 }
 
 div#temphum.col{
