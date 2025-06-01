@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { StrollerPositionCard, TempHumGauge } from "./Gauges";
+import { ObjectProximityCard, StrollerPositionCard, TempHumGauge } from "./Gauges";
 import { AirQualityGauge } from "./Gauges";
 import { useEffect, useState } from 'react';
 
@@ -19,6 +19,7 @@ function MonitorView(){
             .then((data) => setSensors(data))
             .catch((err) => console.error("Error: ")+err);
         }, 8000)
+
     },[]);
 
     return(
@@ -28,6 +29,7 @@ function MonitorView(){
                     <TempHumGauge sensors={sensors}/>
                     <AirQualityGauge sensors={sensors}/>
                     <StrollerPositionCard sensors={sensors}/>
+                    <ObjectProximityCard sensors={sensors}/>
                 </div>
             </div>
         </div>

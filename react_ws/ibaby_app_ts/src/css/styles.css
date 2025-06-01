@@ -233,13 +233,14 @@ div#monitor.card{
   background: #913df2;
   background: linear-gradient(240deg,rgba(145, 61, 242, 1) 14%, rgba(238, 201, 255, 1) 100%);
   width: 100%;
+  max-width: 700px;
   height: 250px;
   display: flex;
   justify-items: center;
-  margin:1%;
+  margin:8px;
   align-items: center;
   border-radius: 25px;
-  padding: 2%;
+  padding: 16px;
   box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.295);
   overflow-x: hidden;
   overflow-y: hidden;
@@ -280,9 +281,11 @@ div#StrollerPosition.row{
 }
 
 div.container{
-  width: 100%;
+  width: inherit;
   margin:0%;
   padding-left: 0%;
+  padding: 0;
+  min-width: calc(100vw - 324px);
 }
 
 div.row{
@@ -331,10 +334,6 @@ div.main-content{
   background: linear-gradient(-45deg,rgba(27, 16, 89, 1) 0%, rgba(58, 43, 141, 1) 11%, rgba(187, 157, 219, 1) 100%);
 }
 
-div.container{
-  padding: 0;
-}
-
 div.main-content.mobile{
   margin-right: 0%;
   margin-left: 0%;
@@ -365,8 +364,10 @@ div.container.toggled{
 div.container.regular{
   margin-left:0;
   transition: .3s ease-in-out;
-  padding-left: 30%;
+  padding-left: clamp(0px, 30%, 326px);
   min-width: 100vw;
+  display: flex;
+  width: 100%;
 }
 #gauge-chart1{
   max-width: 100% !important;
@@ -413,4 +414,9 @@ h3#air{
 
 div.js-plotly-plot{
   padding: 0;
+}
+
+div.container.regular > .container{
+  max-width: 100% !important;
+  max-height: 100% !important;
 }

@@ -123,12 +123,21 @@ function TempHumGauge({sensors} : {sensors: sensor[]}){
     )
 }
 
-function PressurePositionCard({sensors} : {sensors: sensor[]}){
+function ObjectProximityCard({sensors} : {sensors: sensor[]}){
+    const[val, setVal] = useState<number>(0);
+
+    useEffect(()=>{
+        const value = sensors.find(x => x.TYPE == 'proximity')?.VALUE;
+        if(value){
+            setVal(value);
+        }
+    }, [sensors]);
+
     return(
         <div className='col'>
             <div className='card' id='monitor'>
-                <div className='row' id='pressPosition'>
-                    
+                <div className='row' id='proximity'>
+                    <h3 id='pos'>Stroller-object proximity (FRONT): {val}mm</h3>
                 </div>
             </div>
         </div>
@@ -139,7 +148,6 @@ function StrollerPositionCard({sensors} : {sensors: sensor[]}){
 
     const[value, setValue] = useState<number[]>([]);
     const[isOn, setIsOn] = useState<String>("");
-
     useEffect(() =>{
         const rawValue = sensors.find(el => el.TYPE=='angular')?.VALUE;
         const values = rawValue?.toString().split(',').map(Number);
@@ -164,12 +172,13 @@ function StrollerPositionCard({sensors} : {sensors: sensor[]}){
         <div className='col'>
         <div className='card' id='monitor'>
             <div className='row' id='StrollerPosition'>
-            <h3 id="pos">Stroller angle position: {totalAngle.toPrecision(4)}°</h3>
-            <h3 id="pos">{isOn}</h3>
+                <h3 id="pos">Stroller angle position: {totalAngle.toPrecision(4)}°</h3>
+                <h3 id="pos">{isOn}</h3>
             </div>
         </div>
     </div>
     )
 }
 
-export {TempHumGauge, AirQualityGauge, PressurePositionCard, StrollerPositionCard};
+
+export {TempHumGauge, AirQualityGauge, ObjectProximityCard, StrollerPositionCard};

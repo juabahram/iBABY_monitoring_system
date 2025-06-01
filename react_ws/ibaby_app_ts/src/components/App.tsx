@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Header from './header'
 import SideBar from './NavBar'
 import MonitorView from './MonitorView'
+import GPSView from './GPSView'
 
 function App() {
   
@@ -38,6 +39,7 @@ function App() {
           <div className={`container ${!close? 'regular':'toggled'}`}>
             <Routes>
               <Route path="/MonitorView" element={<MonitorView />}/>
+              <Route path="/GPS" element={<GPSView />} />
             </Routes>
           </div>
         </div>
