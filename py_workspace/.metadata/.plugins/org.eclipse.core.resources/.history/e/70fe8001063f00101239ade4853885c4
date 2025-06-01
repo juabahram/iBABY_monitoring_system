@@ -1,0 +1,98 @@
+import sqlite3
+import paho.mqtt.client as mqtt
+
+# Configuración de la base de datos SQLite
+DB_NAME = 'ibaby.db'
+id_set_sensors=set()
+id_set_actuators=set()
+actuators=set("buzzer")
+
+def conectar_bd():
+    #Conecta a la base de datos SQLite
+    return sqlite3.connect(DB_NAME)
+
+def insert_sensor(tipo, valor):
+    #Inserta datos en la tabla SENSORS
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("INSERT INTO SENSORS (TYPE, VALUE) VALUES (?, ?)", (tipo, valor))
+    conn.commit()
+    conn.close()
+    print(f"Datos insertados: Tipo={tipo}, Valor={valor}")
+
+def update_sensor(tipo, valor, ids):
+    #Actualiza datos en la tabla SENSORS
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("UPDATE SENSORS SET TYPE = ? , VALUE = ?, TIMESTAMP = CURRENT_TIMESTAMP WHERE ID = ?", (tipo, valor, ids))
+    conn.commit()
+    conn.close()
+    print(f"Datos actualizados: Tipo={tipo}, Valor={valor}")
+    
+def insert_actuator(tipo, valor):
+    #Inserta datos en la tabla ACTUATORS
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("INSERT INTO ACTUATORS (TYPE, STATE) VALUES (?, ?)", (tipo, valor))
+    conn.commit()
+    conn.close()
+    print(f"Datos insertados: Tipo={tipo}, Valor={valor}")
+    
+def update_actuator(tipo, valor, ids):
+    #Actualiza datos en la tabla SENSORS
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("UPDATE ACTUATORS SET TYPE = ? , STATE = ?, TIMESTAMP = CURRENT_TIMESTAMP WHERE ID = ?", (tipo, valor, ids))
+    conn.commit()
+    conn.close()
+    print(f"Datos actualizados: Tipo={tipo}, Valor={valor}")
+
+# Funciones de manejo del cliente MQTT
+def on_connect(client, userdata, flags, rc):
+    #Se ejecuta cuando el cliente se conecta al broker
+    if rc == 0:
+        print("Conexión exitosa al broker MQTT")
+        client.subscribe("sensors/+")  # Suscribirse a todos los temas bajo 'sensors'
+    else:
+        print(f"Error de conexión con código {rc}")
+
+def on_message(client, userdata, msg):
+    #Se ejecuta cuando se recibe un mensaje en el tema suscrito
+    try:
+        payload = msg.payload.decode('utf-8')
+        #print(f"Mensaje recibido: Tema={msg.topic}, Mensaje={payload}")
+        
+        # Extraer tipo y valor del mensaje (se espera un formato JSON)
+        
+        tipo, valor, ids = payload.split(":")
+        if(actuators.__contains__(valor)):
+            if(id_set_actuators.__contains__(ids)):
+                update_actuator(tipo, valor, ids)
+            else:
+                insert_actuator(tipo, valor)
+    
+        elif (id_set_sensors.__contains__(ids)):
+            update_sensor(tipo, valor, ids)
+        else:
+            insert_sensor(tipo, valor)
+            id_set_sensors.add(ids)
+            
+        
+    except Exception as e:
+        print(f"Error procesando el mensaje: {e}")
+
+if __name__ == "__main__":
+
+    # Configuración del cliente MQTT
+    broker = "192.168.241.170"
+    port = 1883
+
+    client = mqtt.Client()
+    client.on_connect = on_connect
+    client.on_message = on_message
+
+    # Conexión al broker MQTT
+    client.connect(broker, port, keepalive=60)
+
+    # Bucle para mantener el cliente activo
+    client.loop_forever()

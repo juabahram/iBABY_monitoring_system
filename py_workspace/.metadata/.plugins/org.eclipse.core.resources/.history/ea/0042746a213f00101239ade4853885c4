@@ -1,0 +1,89 @@
+'''
+Created on 28 ene 2025
+
+@author: juanb
+'''
+from flask import Flask, jsonify, request, make_response
+import sqlite3
+from flask_cors.extension import CORS
+import paho.mqtt.client as mqtt
+
+app = Flask(__name__)
+CORS(app)
+mqtt_client = mqtt.Client()
+mqtt_client.connect("localhost", 1883, 60)
+
+# Conexión a la base de datos
+def conectar_bd():
+    conn = sqlite3.connect("ibaby.db")
+    conn.row_factory = sqlite3.Row  # Permite obtener los resultados como diccionarios
+    return conn
+
+#######SENSORS#######
+
+@app.route('/api/ibaby/sensors', methods=['GET'])
+def get_all_sensors():
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM SENSORS")
+    sensors = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(sensors)
+
+@app.route('/api/ibaby/sensors/<int:sensorId>', methods=['GET'])
+def get_sensor_by_id(sensorId):
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM SENSORS WHERE ID = ?", (sensorId,))
+    sensors = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(sensors)
+
+######ACTUATORS######
+# Endpoint para obtener actuadores
+@app.route('/api/ibaby/actuators')
+def get_actuators():
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM ACTUATORS")
+    actuadores = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(actuadores)
+
+#Endpoint para obtener actuadores según ID
+@app.route('/api/ibaby/actuators/<int:actuatorId>', methods=['GET'])
+def get_actuator_by_id(actuatorId):
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM ACTUATORS WHERE ID = ?", (actuatorId,))
+    actuadores = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(actuadores)
+
+# Endpoint para insertar datos en actuadores
+@app.route('/api/ibaby/actuators/<int:actuatorId>', methods=['POST', 'OPTIONS'])
+def update_actuators(actuatorId):
+    
+    if request.method == 'OPTIONS':
+        # Responder preflight CORS
+        response = make_response()
+        response.headers.add("Access-Control-Allow-Origin", "*")
+        response.headers.add("Access-Control-Allow-Headers", "Content-Type")
+        response.headers.add("Access-Control-Allow-Methods", "POST, OPTIONS")
+        return response
+    
+    data = request.get_json()  # Recibe datos en formato JSON
+    tipo = data.get('type')
+    estado = data.get('state')
+    
+    topic = "/ibaby/actuators/"+tipo
+    mqtt_client.publish(topic, estado)
+    
+    response = make_response(jsonify({"ok": True}))
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    print("here!")
+    return response
+
+# Iniciar la aplicación
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=5000, debug=True)

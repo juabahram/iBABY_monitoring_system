@@ -1,0 +1,88 @@
+'''
+Created on 28 ene 2025
+
+@author: juanb
+'''
+from flask import Flask, jsonify, request
+import sqlite3
+from flask_cors.extension import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+# Conexión a la base de datos
+def conectar_bd():
+    conn = sqlite3.connect("ibaby.db")
+    conn.row_factory = sqlite3.Row  # Permite obtener los resultados como diccionarios
+    return conn
+
+#######SENSORS#######
+
+@app.route('/api/sensors', methods=['GET'])
+def get_all_sensors():
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM SENSORS")
+    sensors = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(sensors)
+
+@app.route('/api/sensors/:sensorId', methods=['GET'])
+def get_sensor_by_id(sensorId):
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM SENSORS WHERE ID = " + sensorId)
+    sensors = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(sensors)
+
+@app.route('/api/sensors/:sensorType', methods=['GET'])
+def get_sensors_by_type(sensorType):
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM SENSORS WHERE TYPE = " + sensorType)
+    sensors = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(sensors)
+
+@app.route('/api/sensors/:sensorId', methods=['GET'])
+def get_sensor_by_date(date1,date2):
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM SENSORS WHERE TIMESTAMP >= " + date1 + " AND TIMESTAMP < " + date2)
+    sensors = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(sensors)
+
+######ACTUATORS######
+
+# Endpoint para obtener todos los actuadores
+@app.route('/api/actuators/:actuatorId', methods=['GET'])
+def get_actuators():
+    conn = conectar_bd()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM ACTUATORS")
+    actuadores = [dict(row) for row in cursor.fetchall()]
+    conn.close()
+    return jsonify(actuadores)
+
+# Endpoint para insertar datos en actuadores
+@app.route('/api/actuators/:actuatorId', methods=['POST'])
+def update_actuators():
+    data = request.get_json()  # Recibe datos en formato JSON
+    tipo = data.get('type')
+    valor = data.get('value')
+    
+    if tipo and isinstance(valor, bool):
+        conn = conectar_bd()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO ACTUATORS (TYPE, STATE) VALUES (?, ?)", (tipo, valor))
+        conn.commit()
+        conn.close()
+        return jsonify({"message": "Actuador insertado correctamente"}), 201
+    else:
+        return jsonify({"error": "Datos inválidos"}), 400
+
+# Iniciar la aplicación
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=5000, debug=True)

@@ -1,0 +1,13 @@
+INSTUPRestAPI
+C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\database\RestAPI.py
+INFOS:&&3|1|2|0|3|11|1&&3|4|2|0|3|13|1&&2|5|2|0|3|17|5&&2|6|2|0|3|25|5&&2|7|2|0|3|34|5&&2|8|2|0|3|43|5&&2|9|2|0|3|52|5&&2|10|2|0|3|63|5
+app=1
+get_sensor_by_id=7
+conectar_bd=5
+RestAPI=2
+C:\Users\juanb\Documents\Grado_en_Ingenieria_de_Computadores\iBaby\py_workspace\database\RestAPI.py=3
+get_actuators=10
+get_sensors_by_type=8
+get_all_sensors=6
+get_sensor_by_date=9
+mqtt_client=4
