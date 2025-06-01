@@ -7,6 +7,7 @@ import Header from './header'
 import SideBar from './NavBar'
 import MonitorView from './MonitorView'
 import GPSView from './GPSView'
+import ActuatorsView from './ActuatorsView'
 
 function App() {
   
@@ -40,6 +41,7 @@ function App() {
             <Routes>
               <Route path="/MonitorView" element={<MonitorView />}/>
               <Route path="/GPS" element={<GPSView />} />
+              <Route path="/ActuatorsView" element={<ActuatorsView />}/>
             </Routes>
           </div>
         </div>

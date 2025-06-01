@@ -2,21 +2,28 @@ import { useEffect, useRef, useState } from "react";
 import L from "leaflet";
 import 'leaflet/dist/leaflet.css';
 import { sensor } from "./MonitorView";
+import { useLocation } from "react-router-dom";
 
 export default function GPSView(){
     const[val, setVal] = useState<number[] | null>(null);
     const mapRef = useRef<L.Map | null>(null);
     const[sensors, setSensors] = useState<sensor[]>([]);
+    const location = useLocation();
 
      useEffect(()=>{
+        const path  = location.pathname.split("/").filter(Boolean).pop();
         const interval = setInterval(()=> {
-            fetch('http://127.0.0.1:5000/api/sensors').then((res) => res.json())
-            .then((data) => setSensors(data))
-            .catch((err) => console.error("Error: ")+err);
+            if(path=="gps"){
+                fetch('http://127.0.0.1:5000/api/ibaby/sensors').then((res) => res.json())
+                .then((data) => setSensors(data))
+                .catch((err) => console.error("Error: ")+err);
+            }
+
         }, 8000)
 
         return () => clearInterval(interval);
-    },[]);
+
+    },[location.pathname]);
 
     useEffect(()=>{
         const vals= sensors.find(x => x.TYPE=='gps')?.VALUE;

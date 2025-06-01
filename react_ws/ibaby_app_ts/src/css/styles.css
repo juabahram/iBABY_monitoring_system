@@ -420,3 +420,21 @@ div.container.regular > .container{
   max-width: 100% !important;
   max-height: 100% !important;
 }
+
+div#buzzer.row{
+  width: 100%;
+}
+div#buzzer.row > h3{
+  display: flex;
+  align-items: center;
+}
+
+h3 > button{
+  display: flex;
+  align-items: center;
+}
+
+h3 > button:hover{
+  border-radius: 5px;
+  border-color: white;
+}

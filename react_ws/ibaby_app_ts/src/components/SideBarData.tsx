@@ -12,7 +12,7 @@ export const SideBarData=[
     },
     {
         title: 'Actuators',
-        path:'/actuators',
+        path:'/ActuatorsView',
         icon: <AiIcons.AiFillAlert />
     },
     {

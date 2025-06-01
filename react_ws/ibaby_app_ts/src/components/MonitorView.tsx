@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ObjectProximityCard, StrollerPositionCard, TempHumGauge } from "./Gauges";
 import { AirQualityGauge } from "./Gauges";
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export type sensor ={
     ID: number;
@@ -12,15 +13,19 @@ export type sensor ={
 
 function MonitorView(){
     const[sensors, setSensors] = useState<sensor[]>([]);
-    
+    const location = useLocation();
     useEffect(()=>{
+        const path  = location.pathname.split("/").filter(Boolean).pop();
+        console.log(path);
         const interval = setInterval(()=> {
-            fetch('http://127.0.0.1:5000/api/sensors').then((res) => res.json())
-            .then((data) => setSensors(data))
-            .catch((err) => console.error("Error: ")+err);
+            if(path == "MonitorView"){
+                fetch('http://127.0.0.1:5000/api/ibaby/sensors').then((res) => res.json())
+                .then((data) => setSensors(data))
+                .catch((err) => console.error("Error: ")+err);
+            }else setSensors([]);
         }, 8000)
-
-    },[]);
+        return () => clearInterval(interval);
+    },[location.pathname]);
 
     return(
         <div className="container">
